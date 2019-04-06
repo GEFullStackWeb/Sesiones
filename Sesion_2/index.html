@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- No es visible al usuario -->
+	<!-- Caracteres -->
+	<meta charset="utf-8">	
+	<title>Etiquetas de texto</title>
+	<!-- Autor -->
+	<meta name="author" content="Su nombre">
+	<!-- Descripcion de la pagina -->
+	<meta name="description" content="Aqui avanzaremos las etiquetas de texto">
+	<!-- Palabras claves -->
+	<meta name="keywords" content="etiquetas de texto">
+	<!-- Icono imagen propia -->
+	<link rel="short icon" type="image/png" href="imgs/icono.png">
+	<!-- Icono imagen de otra pagina --><!-- OJO: Solo usar una etiqueta para icono -->
+	<link rel="icon" href="http://www.facebook.com/favicon.ico">
+</head>
+<!-- <Cuerpo del Navegador -->
+<body>
+	<header>
+		<!-- Titulos de distintos tamaños -->
+		<h1 id="inicio">Titulo H1</h1>
+		<h2>Titulo H2</h2>
+		<h3>Titulo H3</h3>
+		<h4>Titulo H4</h4>
+		<h5>Titulo H5</h5>
+		<h6>Titulo H6</h6>
+	</header>
+	<nav></nav>
+	<main>
+		<!-- Articulo -->
+		<article>
+			<h3>Titulo de Articulo</h3>
+			<!-- Parrafo -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<!-- Parrafo Predefinido -->
+			<pre>Lorem ipsum 
+				dolor sit amet, consectetur adipisicing elit, sed do eiusmod			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre>
+			<!-- Parrafo editable, sin formato --><!-- Salto de linea -->
+			<span contenteditable>Editar este texto</span><br>
+			<span>Este  es un span</span><br>
+
+			<p>Dentro de un parrafo tenemos textos en <u>subrayado</u>, tenemos palabras en <em>cursiva enfasis</em> y en <i>cursiva estilo</i>. Tenemos tambien textos en <strong>negrita enfasis</strong> y por ultimo <b>negrita estilo</b></p>
+			<p>Podemos <mark>resaltar</mark> el texto, <small>textos pequeños</small>, <cite>citar un autor</cite>, <address>direccion</address>, podemos poner la <time>21-04-2017</time></p>
+			<pre>
+				<code>
+Select *
+from table1
+				</code>
+			</pre>
+			<data value="100">cien</data>
+		</article>
+
+		<section id="listas">
+			<h2>LISTAS</h2>
+			<!-- LISTAS -->
+			<!-- Listas ordenadas -->
+			<ol>
+				<li>uno</li>
+				<li>dos</li>
+				<!-- En el type podemos usar A, a, 1, i, I para poder ordenar nuestra lista -->
+				<ol type="i" reversed>
+					<li>uno</li>
+					<li>dos</li>
+				</ol>
+				<li>tres</li>
+				<li>cuatro</li>
+			</ol>
+
+			<!-- Listas Desordenadas -->
+			<!-- Existen el tipo disc, circle y square -->
+			<ul type="circle">
+				<li>uno</li>
+				<li>dos</li>
+				<li>tres</li>
+				<li>cuatro</li>
+			</ul>
+
+			<!-- Lista de Terminos y descripciones -->
+			<dl>
+				<!-- Termino -->
+				<dt>Argentina</dt>
+				<!-- Su descripcion -->
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+				<dt>Colombia</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+			</dl>
+
+			<!-- La lista que se expande -->
+			<details>
+				<!-- Lo que me aparecera en el Navegador -->
+				<summary>Lista Paises</summary>
+				<!-- Items dentro de la lista -->
+				<blockquote>Chile</blockquote>
+				<blockquote>Bolivia</blockquote>
+				<blockquote>Argentina</blockquote>
+				<blockquote>Colombia</blockquote>
+			</details>
+		</section>
+		<section>
+
+			<!-- Enlaces -->
+			<!-- Para movernos en la misma pagina -->
+			<a href="#inicio">Inicio</a> | 
+			<a href="#listas">Listas</a><br>
+			<!-- Para ir a otra pagina --><!-- Si ponemos Target="_blank" nos llevara a otra pagina en una NUEVA PESTAÑA -->
+			<a href="https://www.google.com" target="_blank">Google</a><br>
+			<!-- Descargar archivos -->
+			<a href="Clase2_HTML.pptx" download>Descargar</a>
+		</section>
+	</main>
+	<aside></aside>
+	<footer></footer>
+</body>
+</html>
