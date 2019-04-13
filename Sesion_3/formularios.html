@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<form novalidate>
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label for="nombre">Nombre</label> 
+			<input type="text" name="nombre" placeholder="ingrese su nombre" maxlength="15"id="nombre"> <br> <br>
+			<label for="apellido">apellido</label>
+			 <input type="text" id="apellido" name="apellido" placeholder="ingrese sus apellidos" size="10" maxlength="15"> <br><br>
+			 <label>Sexo</label> <br>
+			 <input type="radio" name="Sexo" id="hombre" value="h"> 
+			 <label for="hombre">Hombre</label>
+			 <input type="radio" name="Sexo" id="mujer" autofocus value="m">
+			 <label for="mujer">Mujer</label>
+		</fieldset>
+		<fieldset>
+			<legend>cursos</legend>
+			<input type="checkbox" name="curso" value="php"><label>php</label>
+			<input type="checkbox" name="curso" value="java"><label>java</label>
+			<input type="checkbox" name="curso" value="css"><label>Css</label>
+
+			<br>
+			<label>escribe tus comentarios</label> <br>
+			<textarea rows="10" > HOla </textarea>
+			<br><br>
+			<label>elige tus cursos </label>
+			<select>
+				<option>php</option>
+				<option selected>java</option>
+				<option>css</option>
+			</select>
+			<br><br>
+			<label>elige tus cursos y selecciona mas</label>
+			<input list="propuestas" name="">
+			<datalist id="propuestas">
+				<option value="php"></option>
+				<option value="java"></option>
+				<option value="css"></option>
+			</datalist>
+		</fieldset>
+		<fieldset>
+			<legend>nuevos atributos</legend>
+			<label>color</label>
+			<input type="color" name="color"> <br>
+			<label>fecha de nacimiento</label>/
+			<input type="date" name=""> <br>
+			<label> fecha y hora</label>
+			<input type="datetime-local" name=""> <br>
+			<label >meces</label>
+			<input type="month" name=""><br>
+			<label>semanas</label>
+			<input type="week" name=""> <br>
+			<label>hora</label>
+			<input type="time" ><br>
+			<label>contraseñas</label>
+			<input type="password" required name=""> <br>
+			<label>correo</label>
+			<input type="email" name=""><br>
+			<label>buscar</label>
+			<input type="search" name=""><br>
+			<label>url</label>
+			<input type="url" name=""><br>
+			<label>rango</label>
+			<input type="range" min="0" max="10" name="rango"> <br> 
+			<label>stock</label>
+			<input type="number" name="" min="0" max="10"> <br>
+
+			<label>archivos</label>
+			<input type="file" name=""> <br>
+
+			<label> oculta campo</label>
+			<input type="hidden" name=""><br>
+
+			<label>imgenes</label>
+			<input type="image" name="" width="20" src="img/git.png">
+
+			<label>estrellas</label>
+			<input type="image" value="1" width="20" src="img/estrella.png" name="">
+
+			<input type="image" value="2" width="20" src="img/estrella.png" name="">
+
+			<input type="image" value="3" width="20" src="img/estrella.png" name="">
+
+			<input type="image" value="4" width="20" src="img/estrella.png" name="">
+			<input type="image" value="5" width="20" src="img/estrella.png" name="">
+		</fieldset>
+
+		<button type="submit">enviar</button>
+
+		<button type="reset" disabled>limpiar</button>	
+		<input type="submit" disabled value="enviar" name="">	
+		<input type="reset" value="limpiar" name="">
+	</form>
+
+</body>
+</html>
