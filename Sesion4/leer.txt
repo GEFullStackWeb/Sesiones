@@ -1,0 +1,14 @@
+Ejemplo para poner lado a lado las cajas
+
+.izquierda{
+	display: flex;
+	float: left;
+}
+.centro{
+	display: flex;
+	float: left;
+}
+.derecha{
+	display: flex;
+	float: left;
+}

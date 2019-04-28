@@ -1,0 +1,42 @@
+* {
+	/*Este es el padre del documento*/
+
+		padding: 0;
+
+/*	margin:0;*/
+
+
+}
+h1, h2, h3, h4, h5, h6{
+	color:blue;
+}
+p{
+	background: orange;
+}
+div p{
+	background-color: red;
+	font font-family: arial;
+}
+
+div p a {
+
+	/*este es el hijo de la etiqueta DIV y de la etiqueta P */
+	background: blue;
+	color:green;
+}
+
+a[href="http://www.facebook.com"]{
+	font size: 30px;
+	color:white;
+	background: black;
+}
+
+div p.blackp{
+	background: black;
+	color:white;
+	border-radius: 5px;
+}
+div p, #nuevo{
+	background: green;
+	color:blue;
+}
