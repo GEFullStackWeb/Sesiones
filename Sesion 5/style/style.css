@@ -1,0 +1,114 @@
+/* TEXTOS */
+@font-face{
+	font-family: "Morning Sunsh";
+	src: url("../font/MorningSunshine.ttf");
+}
+
+article[name="mi_fuente"]{
+	font-family: "Morning Sunsh", Arial;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: italic;
+}
+article.otras_fuentes{
+	font: bold 18px Arial, Verdana;
+	font-variant: small-caps;
+}
+article>h2{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	letter-spacing: 7px;
+	word-spacing: 15px;
+}
+article>p{
+	text-align: justify;
+	text-indent: 25px;
+	line-height: 25px;
+}
+
+/* COLORES */
+table{
+	height: 250px;
+	/* background: grey; */
+}
+tr>td{
+	width: 200px;
+	height: 150px;
+}
+
+#col_rgb{
+	background: rgb(255, 0,0);
+	/* opacity: 0.2; */
+}
+#col_rgba{
+	background: rgba(255, 0,0, 0.5);
+}
+#col_hsl{
+	background: hsl(240, 100%, 50%);
+}
+#col_hsla{
+	background: hsl(240, 100%, 50%, 0.7);
+}
+#col_lineal{
+	background: -webkit-linear-gradient(bottom right, blue, yellow, grey, transparent);
+	background: -moz-linear-gradient(bottom right, blue, yellow, grey, transparent);
+	background: -ms-linear-gradient(bottom right, blue, yellow, grey, transparent);
+	background: -o-linear-gradient(bottom right, blue, yellow, grey, transparent);
+}
+#col_radio{
+	background: -webkit-radial-gradient(right, ellipse, blue, green, yellow);
+}
+
+/* TAMAÑOS */
+#tama>p{
+	width: 30%;
+	height: 100px;
+	overflow: scroll;
+	overflow-wrap: break-word;
+}
+
+/* CAJAS */
+.padre>div{
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	/* AR DE AB IZ */
+	margin: 10px ;
+	padding: 10px;
+	border-width: 5px;
+	border-color: grey;
+	display: inline-block;
+}
+
+#c1{
+	border-top-style: dotted;
+	border-left-style: dashed;
+	border-bottom-style: double;
+	border-right-style: hidden;
+}
+#c2{
+	/* border: solid 10px blue;
+	border-radius: 20px 140px 10px 5px; */
+}
+#c3{
+	border-style: groove;
+}
+#c4{
+	border-style: ridge;
+}
+#c5{
+	border-style: inset;
+}
+#c6{
+	border-style: outset;
+}
+
+/* FLOTANTES */
+img{
+	width: 150px;
+	float: left;
+}
+p.dos{
+	clear: both;
+}
