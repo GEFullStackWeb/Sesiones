@@ -1,0 +1,212 @@
+/*Etiquetas necesarias para evitar el desbordamiento*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*Generales*/
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+h2{
+	color: darkblue;
+}
+
+/*Párrafo*/
+.parrafo{
+	font-size:18px;
+	line-height: 2;
+}
+/*span*/
+#uno{
+	color:#ff0000;
+}
+
+#dos{
+	color:#0000ff;
+}
+
+.importante{
+	font-weight: bold;
+}
+
+
+.estilo{
+	width:280px;  /*Ancho*/
+	height: 30px;/*Alto*/
+	background: #3684F7; /*Color de fondo*/
+	color:#ffffff; /*color del texto*/
+	font-weight:bold; /*texto en negritas*/
+	font-size: 18px;  /*tamaño del texto*/
+}
+
+/*Contenedores*/
+.contenedor1{
+	background: #00FF64; /*color de fondo */
+}
+
+
+.caja{
+	background:#3EB46C; /*color de fondo*/
+	width: 200px; /*ancho del contenedor*/
+	height:35px; /*alto del contenedor*/                             
+}
+
+
+.contenedor2{
+	background: #00FF64; /*color de fondo */
+}
+
+.caja1{
+	background:#3EB46C; /*color de fondo*/
+	width: 200px; /*ancho del contenedor*/
+	height:35px; /*alto del contenedor*/
+	margin-top:6px;  /*separación Externa superior*/                                  
+}
+
+.contenedor3{
+	background: #00FF64; /*color de fondo */
+	padding-bottom:8px;  /*separación interna inferior*/
+	padding-top: 5px;	/*Separación interna superior*/
+	padding-left: 10px;  /* Separación interna izquierda*/
+}
+
+
+.caja2{
+	background:#3EB46C; /*color de fondo*/
+	width: 200px; /*ancho del contenedor*/
+	height:35px; /*alto del contenedor*/
+	margin-top:6px;  /*separación Externa superior*/                                  
+}
+
+.navegacion1{
+	background: #000000; /*Color de fondo del contenedor*/
+	width: 100%; /*Ancho del contenedor*/
+	padding-top:15px; /*Separación superior interna */
+	padding-bottom: 2px; /*Separación inferior interna */
+	padding-left: 35px /*Separación lado izquierdo interna */
+}
+.navegacion1 nav ul{
+	margin:0; /*Separación externa*/
+	padding: 0; /*Separación interna*/
+}
+.navegacion1 nav ul li{
+	width:150px; /*Ancho de cada menu*/
+	height: 50px; /*Alto de cada menu*/
+	background: #313131; /*color de fondo de cada menu*/
+	list-style: none; /*Quitando el diseño de las viñetas*/
+	margin-bottom: 5px; /*separación superior de contenedor a contenedor*/
+}
+.navegacion1 ul li a{
+	color: #ffffff; /*color del texto*/
+	font-weight: bold; /*texto en negritas*/
+	text-decoration: none; /*quitando el subrayado inferior*/
+
+} 
+
+.navegacion2{
+	background: #000000; /*Color de fondo del contenedor*/
+	width: 100%; /*Ancho del contenedor*/
+	padding-top:15px; /*Separación superior interna */
+	padding-bottom: 2px; /*Separación inferior interna */
+	padding-left: 35px /*Separación lado izquierdo interna */
+}
+
+
+.navegacion2 nav ul{
+	margin:0; /*Separación externa*/
+	padding: 0; /*Separación interna*/
+	display: flex;
+}
+.navegacion2 nav ul li{
+	width:150px; /*Ancho de cada menu*/
+	height: 50px; /*Alto de cada menu*/
+	background: #313131; /*color de fondo de cada menu*/
+	list-style: none; /*Quitando el diseño de las viñetas*/
+	margin-bottom: 5px; /*separación superior de contenedor a contenedor*/
+}
+.navegacion2 ul li a{
+	color: #ffffff; /*color del texto*/
+	font-weight: bold; /*texto en negritas*/
+	text-decoration: none; /*quitando el subrayado inferior*/
+
+} 
+
+.navegacion3{
+	background: #000000; /*Color de fondo del contenedor*/
+	width: 100%; /*Ancho del contenedor*/
+	padding-top:15px; /*Separación superior interna */
+	padding-bottom: 2px; /*Separación inferior interna */
+	padding-left: 35px /*Separación lado izquierdo interna */
+}
+
+
+
+.navegacion3 nav ul{
+	margin:0; /*Separación externa*/
+	padding: 0; /*Separación interna*/
+	display: flex;
+	justify-content: space-around;                
+}
+
+
+
+.navegacion3 nav ul li{
+	width:150px; /*Ancho de cada menu*/
+	height: 50px; /*Alto de cada menu*/
+	background: #313131; /*color de fondo de cada menu*/
+	list-style: none; /*Quitando el diseño de las viñetas*/
+	margin-bottom: 5px; /*separación superior de contenedor a contenedor*/
+
+}
+.navegacion3 ul li a{
+
+	color: #ffffff; /*color del texto*/
+	font-weight: bold; /*texto en negritas*/
+	text-decoration: none; /*quitando el subrayado inferior*/
+
+} 
+
+
+.navegacion4{
+	background: #000000; /*Color de fondo del contenedor*/
+	width: 100%; /*Ancho del contenedor*/
+	padding-top:15px; /*Separación superior interna */
+	padding-bottom: 2px; /*Separación inferior interna */
+	padding-left: 35px /*Separación lado izquierdo interna */
+}
+
+
+
+.navegacion4 nav ul{
+	margin:0; /*Separación externa*/
+	padding: 0; /*Separación interna*/
+	display: flex;
+	justify-content: space-around;                
+}
+
+
+
+.navegacion4 nav ul li{
+	display: flex;
+	justify-content: center;  /*Centrara el texto en la fila*/
+	align-items: center; /*Centrara el texto en la columna */
+	width:150px; /*Ancho de cada menu*/
+	height: 50px; /*Alto de cada menu*/
+	background: #313131; /*color de fondo de cada menu*/
+	list-style: none; /*Quitando el diseño de las viñetas*/
+	margin-bottom: 5px; /*separación superior de contenedor a contenedor*/
+
+}
+.navegacion4 ul li a{
+
+	color: #ffffff; /*color del texto*/
+	font-weight: bold; /*texto en negritas*/
+	text-decoration: none; /*quitando el subrayado inferior*/
+
+} 
+
+
+

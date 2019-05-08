@@ -1,0 +1,66 @@
+/*Etiquetas necesarias para evitar el desbordamiento*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*Contenedor header*/
+.header{
+	width: 100%;
+	background:#1367B5;
+	color:white; 
+	height: 350px;
+}
+.header header h3{
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	padding: 10px 0;
+}
+/*Contenedor navegacion */
+.navegacion{
+	height: 80px;
+	width: 100%;
+	background: #6CEC79;
+}
+.navegacion nav h3{
+	margin-top: 0;
+	text-align: center;
+}
+/*Contenedor cuerpo Main y aside */
+.cuerpo{
+	background:#000;
+	width: 90%;
+	margin: 0 auto;
+	display:flex;
+}
+.main{
+	background:#EC51FE;
+	width: 60%;
+	height: 350px;
+	text-align: center;
+}
+.main main h3{
+	text-align: center;
+}
+.aside{
+	width: 40%;
+	background: #A466EE;
+}
+.aside aside h3{
+	text-align: center;
+}
+
+/*Contenedor footer*/
+.footer{
+	background: #13376C;
+	height: 50px;
+}
+.footer footer h3{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+}
+

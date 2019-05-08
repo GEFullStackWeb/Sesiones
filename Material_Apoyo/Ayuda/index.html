@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex Box</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<h2 id="referencia">Importante</h2>
+	<p class="parrafo">Para aplicar estilos y dominar el manejo de contenedores, el estudiante debe poder diferenciar entre etiquetas de <span id="uno">linea</span> y etiquetas de <span id="dos">bloque.</span> Si el estudiante no puede diferenciar estos dos tipos de etiquetas tendrá problemas al momento de aplicar ciertos estilos a alguna etiqueta HTML.</p>
+	
+	<p class="parrafo">El siguiente estilo se aplicara a una etiqueta de linea y a una etiqueta de bloque.</p>
+	<img src="img/prueba1.png" alt="Imagen de prueba 1">
+	
+
+	<h2>Etiqueta de linea </h2>	
+		<a class="estilo" href="#">Resultado Etiqueta de linea</a>	
+
+	<h2>Etiqueta de bloque </h2>		
+		<h5 class="estilo">Resultado Etiqueta de bloque</h5>
+		
+
+	<p class="parrafo">Como se puede observar a las dos etiquetas se les aplica el mismo estilo, pero no se tiene el mismo resultado. La etiqueta de linea no logra reconocer el alto y ancho que se le da con los estilos.</p>
+
+	<h2>Contenedores</h2>
+	<p class="parrafo">La etiqueta <span class="importante">&lt;div></span> nos ayuda en el manejo de contenedores. Estos contenedores van asociados un <span class="importante">id</span> o un <span class="importante">class</span>. El <span class="importante">id</span> debe ser declarado solo una vez, a diferencia del <span class="importante">class </span>que puede ser declarado mas de una vez.</p>
+	
+	<p class="parrafo">En el siguiente ejemplo se aplicara estilos a un contenedor padre (contenedor1) y a un contenedor hijo (caja)</p>
+
+	<img id="referenciaClase" src="img/imagen2.png" alt="Imagen de prueba contenedores">
+		<p class="parrafo"><span class="importante">Resultado</span></p>
+		 <div class="contenedor1">
+		 	<div class="caja">1</div>
+		 	<div class="caja">2</div>
+		 	<div class="caja">3</div>
+		 	<div class="caja">4</div>
+		 </div>
+
+	<h2>Manejo del margin</h2>
+	
+	<p class="parrafo">Margin o también conocido como <span class="importante">margen externo</span>, permite darle cierto espacio de separación en las 4 posiciones (top, right, bottom, left). </p>
+	
+	<img src="img/prueba4.png" alt="Imagen de prueba contenedores">
+
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+		 <div class="contenedor2">
+		 	<div class="caja1">1</div>
+		 	<div class="caja1">2</div>
+		 	<div class="caja1">3</div>
+		 	<div class="caja1">4</div>
+		 </div>
+
+	<p class="parrafo">Puede notarse que entre las cajas hay una separación de 	6px, pero entre el contenedor y las cajas no existe tal separación. Para que exista tal separación se aplica <span class="importante">padding.</span></p>
+
+	<h2>Manejo del padding</h2>
+	<p class="parrafo"> Padding o también conocido como <span class="importante">padding interno</span>, permite darle cierto espacio de separación en las 4 posiciones (top, right, bottom, left). </p>
+
+	<img src="img/prueba5.png" alt="Imagen de prueba contenedores">
+	
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+		 <div class="contenedor3">
+		 	<div class="caja2">1</div>
+		 	<div class="caja2">2</div>
+		 	<div class="caja2">3</div>
+		 	<div class="caja2">4</div>
+		 </div>
+
+	<h2>Manejo de FlexBox</h2>
+	<p class="parrafo">FlexBox nos permite ordenar y manipular los contenedores de una manera mas facil. Para entenderlo mejor se realizara un pequeño menú de navegación.</p>
+	
+	<img src="img/prueba6.png" alt="Imagen de prueba contenedores">
+
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+	<div class="navegacion">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Tienda</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<p class="parrafo">Para aplicar flexbox se debe identificar al contenedor padre. En este caso queremos que las listas<span class="importante"> &lt;li> </span>  se posicionen de manera horizontal. Entonces la etiqueta padre de los <span class="importante"> &lt;li> </span> es la etiqueta  <span class="importante">  &lt;ul>. </span>A esta etiqueta se le aplicara flexbox. Antes se aplicara algunos estilos al menú de navegación.</p>
+	
+	<img src="img/prueba7.png" alt="Imagen de prueba">
+
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+	<div class="navegacion1">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Tienda</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<p>Ahora se aplicara la propiedad <span class="importante">flex</span> para que el menú tome la posición horizontal. </p>
+
+	<img src="img/prueba8.png" alt="Imagen de prueba">
+
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+	<div class="navegacion2">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Tienda</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<p class="parrafo">El menú ya tomo la posición horizontal pero todos los menús estan juntos uno al otro, entonces se hara uso de algunas propiedades de flexbox para darles una pequeña separación</p>
+
+	<h2>Propiedades de FlexBox </h2>
+	<p class="parrafo">Se hará uso de la propiedad <span class="importante">justify-content:space-around;</span>Esta propiedad separa a los contenedores con el mismo espacio de separación a su alrededor y puede ser utilizada despues de haber aplicado <span class="importante">display:flex;.</span>  </p>
+
+	<img src="img/prueba9.png" alt="Imagen de prueba">
+
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+	
+	<div class="navegacion3">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Tienda</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<p class="parrafo">La siguiente propiedad <span class="importante">justify-content:center;</span>Esta propiedad centra los contenedores y puede ser utilizada despues de haber aplicado <span class="importante">display:flex;.</span>  </p>
+
+	<img src="img/prueba10.png" alt="Imagen de prueba">
+
+	<p class="parrafo"><span class="importante">Resultado</span></p>
+	
+	<div class="navegacion4">
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Tienda</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<p class="parrafo">Existen muchas propiedades mas sobre flexbox, en el siguiente enlace puede ver mas información. <a href="https://lenguajecss.com/p/css/propiedades/flexbox" target="_blank">FlexBox</a> </p>
+
+	
+	<h2>Manejo de clases y id's</h2>
+	<p class="parrafo">Se pudo ver en los diferentes ejemplos el uso de las clases. Gracias a las clases se pueden aplicar estilos a más de un elemento. Al contrario con el Id solo se puede aplicar estilos a un solo elemento. No se debe olvidar que las clases pueden repetirse como la clase  <span class="importante">caja</span>. <a href="#referenciaClase">Ver referencia clase caja .</a> Los id's son únicos y no pueden repetirse. Se puede notar en el primer párrafo la palabra <span class="importante">linea</span> y la palabra <span class="importante">bloque</span>. A estas dos palabras se les da un <span class="importante">id único</span> por que el estilo que se les aplica son únicos. <a href="#referencia">Ver referencia ID .</a> </p>
+
+
+
+</body>
+</html>
