@@ -1,0 +1,14 @@
+
+/* 
+    input[type="valores de la sesion 3"] */
+input[type="email"], input[type="password"]{
+    
+    /* ponemos un borde de 0px */
+    border: 0px;
+
+     /* quitando el selector del imput */
+     outline: 0px;
+
+     /* ponemos un borde abajo */
+     border-bottom: 1px solid blue;
+}
