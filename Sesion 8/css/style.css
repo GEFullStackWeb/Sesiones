@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header>hgroup {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 2vw;
+}
+
+h1.rojo {
+    color: red;
+}
+
+header>img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* NAVEGACION */
+
+nav>img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+nav>img:hover {
+    opacity: 0.5;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+nav>img:hover+.menu_nav {
+    position: fixed;
+    left: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav .menu_nav {
+    background-color: hsl(240, 100%, 50%);
+    display: none;
+}
+
+nav a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: hsl(240, 100%, 70%);
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main>.main {
+    width: 90%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+article {
+    margin: 10px;
+}
+
+article>img {
+    width: 30vw;
+    margin: 20px;
+    box-shadow: 20px 10px 10px grey;
+}
+
+article>p {
+    text-align: justify;
+}
+
+aside>ul {
+    list-style: none;
+}
+
+aside li {
+    padding: 5px;
+}
+
+footer.up {
+    padding: 20px;
+    background-color: hsl(240, 100%, 50%);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.up>p {
+    margin: 30px 0;
+    width: 40vw;
+    color: white;
+    font-weight: 700;
+}
+
+.down {
+    text-align: center;
+    background-color: hsl(240, 80%, 40%);
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        flex-direction: row;
+    }
+    aside {
+        align-self: flex-start;
+        flex: 1;
+    }
+    section.main {
+        flex: 3 2;
+    }
+    nav .menu_nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav>img {
+        display: none;
+    }
+    article>img {
+        width: 25vw;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 25px;
+    }
+    footer.up {
+        flex-direction: row;
+    }
+    article {
+        clear: both;
+        margin: 30px 0;
+    }
+}
